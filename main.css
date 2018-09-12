@@ -30,7 +30,8 @@ a.btn{
 	color: #fff;
 	border-radius: 4px;
 	text-transform: uppercase;
-	background-color: rgb(18, 33, 247);
+/* 	background-color: rgb(18, 33, 247); */
+	background-color: rgb(216, 125, 6);
 	font-weight: 800;
 	text-align: center;
 }
