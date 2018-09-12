@@ -9,14 +9,14 @@ html {
     color: #555;
 }
 
-nav {
+ul, nav {
     list-style: none;
 }
 
 a {
     text-decoration: none;
     opacity: .8;
-    font: #fff;
+    /* font: #fff; */
     color: inherit;
     cursor: pointer;
   
@@ -29,9 +29,8 @@ a:hover {
 a.btn{
 	color: #fff;
 	border-radius: 4px;
-	text-transform: uppercase;
+	text-transform: uppercase;  
 	background-color: rgb(18, 33, 247);
-/* 	background-color: rgb(216, 125, 6); */
 	font-weight: 800;
 	text-align: center;
 }
@@ -50,7 +49,26 @@ section {
     align-items: center;
     padding: 100px;
 }
+/* @media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+} */
+
+
+
 section h3.title {
+    color: orange;
     text-transform: capitalize;
     font: bold 60px 'Open Sans', sans-serif;
     margin-bottom: 30px;
@@ -65,13 +83,22 @@ section p {
     margin-bottom: 30px;
     text-align: center;
 }
+/* ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+} */
 
 
 header {
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 35px 100px 0;
     animation: fadein 1s .5s forwards;
@@ -85,20 +112,43 @@ header {
     }
 }
 
-
 header h2 {
-    font-family: sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 header nav {
     display: flex;
-    margin-right: -15px;
+    /* margin-right: -15px; */
 }
 
 header nav li {
     margin: 0 15px;
 }
 
+/* header nav li:first-child{
+	margin-left: 0;	
+}
+
+header nav li:last-child{
+	margin-right: 0;	
+} */
+
+/* @media (max-width: 1000px){
+	header{
+		padding: 20px 50px;
+	}
+}
+
+
+@media (max-width: 700px){
+	header{
+		flex-direction: column;		
+	}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+} */
 
 .hero {
     position: relative;
@@ -118,14 +168,27 @@ header nav li {
     z-index: -1;
     background-color: #555;
 }
+/* hero .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.75;
+} */
+
+
+
 
 .hero h1 {
-    font: bold 60px sans-serif;
+	font: bold 60px 'Open Sans', sans-serif;
     margin-bottom: 15px;
     }
 
 .hero h3 {
-    font: normal 28px sans-serif;
+	font: normal 28px 'Open Sans', sans-serif;
     margin-bottom: 40px;
 }
 
@@ -147,3 +210,22 @@ header nav li {
     }
 }
 
+/* @media (max-width: 800px){
+
+	.hero{
+		min-height: 600px;
+	}
+
+	.hero h1{
+		font-size: 48px;
+	}
+
+	.hero h3{
+		font-size: 24px;
+	}
+
+	.hero a.btn{
+		padding: 15px 40px;
+	}
+
+} */
