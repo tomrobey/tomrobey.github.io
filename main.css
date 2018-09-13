@@ -229,3 +229,7 @@ header nav li:last-child{
 	}
 
 } */
+
+.format {
+	display: flex;
+}
