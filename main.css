@@ -111,6 +111,9 @@ header {
         opacity: 1;
     }
 }
+header.dark {
+	color: black;
+}
 
 header h2 {
 	font-family: 'Quicksand', sans-serif;
